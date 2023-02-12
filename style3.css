@@ -1,0 +1,28 @@
+:root{
+    --var-size: 80px
+}
+
+.display{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, var(--var-size));
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.key{
+    display: flex;
+    width: var(--var-size);
+    height: 70px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter{
+    display: none;
+}
