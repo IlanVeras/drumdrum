@@ -1,20 +1,23 @@
 :root{
-    --var-size: 5em
+    --var-size: 4.5em
 }
 
 .display{
+    font-size: larger;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 45%;
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-columns: repeat(3, var(--var-size));
-    grid-row-gap: 10px;
-    grid-column-gap: 0px;
+    grid-row-gap: 18px;
+    grid-column-gap: 18px;
+    border: 1px solid red;
 }
 
 .key{
+
     display: flex;
     width: var(--var-size);
     height: 70px;
@@ -26,3 +29,4 @@
 .letter{
     display: none;
 }
+
