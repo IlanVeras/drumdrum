@@ -57,7 +57,7 @@ document.addEventListener("keydown", function(event){
     }else if(event.key.toLowerCase() == 'l'){
         playSomething('sounds/tink.wav')
         expandIt(key_l)
-        key_l.classList('shadowed')
+        key_l.classList.add('shadowed')
     }else{
         alert('The key that you pressed is not a musical note')
     }

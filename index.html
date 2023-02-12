@@ -5,49 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drum App 1.2</title>
-    <link rel="stylesheet" href="style.css" media="screen and (min-width: 768px) and (max-width: 2000px)">
-    <link rel="stylesheet" href="style2.css" media="screen and (min-width: 600px) and (max-width: 768px)">
+    <link rel="stylesheet" href="style.css" media="screen and (min-width: 1024.1px) and (max-width: 2000px)">
+    <link rel="stylesheet" href="style2.css" media="screen and (min-width: 600px) and (max-width: 1024px)">
     <link rel="stylesheet" href="style3.css" media="screen and (max-width: 600px)">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+        .root{
+            --var-neon: #1F51FF;
+        }
+    </style>
 </head>
 <body>
+    <p id="txtmobi">Press a button</p>
     <main class="display">
         <div class="key a_" id="ka">
+            <i></i>
             <div class="letter">A</div>
             <div class="cc">clap</div>
         </div>
         <div class="key s_" id="ks">
+            <i></i>
             <div class="letter">S</div>
             <div class="cc">hihat</div>
         </div>
         <div class="key d_" id="kd">
+            <i></i>
             <div class="letter">D</div>
             <div class="cc">kick</div>
         </div>
         <div class="key f_" id="kf">
+            <i></i>
             <div class="letter">F</div>
             <div class="cc">openhart</div>
         </div>
         <div class="key g_" id="kg">
+            <i></i>
             <div class="letter">G</div>
             <div class="cc">boom</div>
         </div>
         <div class="key h_" id="kh">
+            <i></i>
             <div class="letter">H</div>
             <div class="cc">ride</div>
         </div>
         <div class="key j_" id="kj">
+            <i></i>
             <div class="letter">J</div>
             <div class="cc">snare</div>
         </div>
         <div class="key k_" id="kk">
+            <i></i>
             <div class="letter">K</div>
             <div class="cc">tom</div>
         </div>
         <div class="key l_" id="kl">
+            <i></i>
             <div class="letter">L</div>
             <div class="cc">tink</div>
         </div>
     </main>
+    <footer>By: Ilan Veras</footer>
     <audio src="sounds/clap.wav"></audio>
 </body>
 <script src="script.js"></script>

@@ -1,5 +1,14 @@
+
+
 :root{
-    --var-size: 4.5em
+    --var-size: 5.4em;
+    --var-neon: #1F51FF;
+}
+
+
+
+body{
+    background-color: #27282c;
 }
 
 .display{
@@ -13,20 +22,49 @@
     grid-template-columns: repeat(3, var(--var-size));
     grid-row-gap: 18px;
     grid-column-gap: 18px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    color: white;
 }
 
 .key{
-
+    font-family: 'Share Tech Mono', 'sans-serif';
     display: flex;
     width: var(--var-size);
-    height: 70px;
-    border: 1px solid black;
+    height: var(--var-size);
+    border: 1px solid white;
     justify-content: center;
     align-items: center;
+    transition: 0.1s;
+    border-radius: 5px;
 }
 
 .letter{
     display: none;
 }
 
+.shadowed{
+    box-shadow: 0px 0px 9px yellow;
+}
+
+#txtmobi{
+    font-family: 'Share Tech Mono', 'sans-serif';
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0 0 20px #fff, 0 0 30px var(--var-neon), 0 0 40px var(--var-neon), 0 0 50px var(--var-neon), 0 0 60px var(--var-neon), 0 0 70px var(--var-neon), 0 0 80px var(--var-neon);;
+}
+ 
+footer{
+    font-family: 'Share Tech Mono', 'sans-serif';
+    font-style: italic;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+}

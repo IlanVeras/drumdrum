@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+:root{
+    --var-neon: #1F51FF;
+}
+
 body{
-    background-color: black;
+    background-color: #27282c;
 }
 
 body{
     overflow: hidden;
+}
+
+#txtmobi{
+    font-family: 'Share Tech Mono', 'sans-serif';
+    font-size: 3em;
+    display: flex; 
+    color: white;
+    justify-content: center;
+    text-shadow: 0 0 20px #fff, 0 0 30px var(--var-neon), 0 0 40px var(--var-neon), 0 0 50px var(--var-neon), 0 0 60px var(--var-neon), 0 0 70px var(--var-neon), 0 0 80px var(--var-neon);;
 }
 
 .display{
@@ -40,9 +53,10 @@ body{
     /* transform: translate(-50%); */
     background-color: transparent;
     border: 2px solid white;
-    color: yellow;
+    color: rgb(255, 251, 0);
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px ;
     border-radius: 5px;
+    transition: 0.1s;
 }
 
 #ka{
@@ -74,5 +88,22 @@ body{
 }
 
 .shadowed{
-    box-shadow: 0px 0px 9px yellow;
+    box-shadow: 0px 0px 9px greenyellow;
+}
+
+i{
+    display: none;
+}
+
+footer{
+    font-family: 'Share Tech Mono', 'sans-serif';
+    font-style: italic;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
 }
