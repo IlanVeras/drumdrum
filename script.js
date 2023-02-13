@@ -78,7 +78,7 @@ composicao('l', key_l)
 
 
 //Esqueleto
-//Verificação de qual tela deixou de ser precionada (keyupa) e qual letraela se refere
+//Verificação de qual tela deixou de ser precionada (keyupa) e qual letra ela se refere
 function composicao(letter, key_what){
     document.addEventListener("keyup", function(event){
         if(event.key.toLocaleLowerCase() == letter){
@@ -153,6 +153,7 @@ key_k.addEventListener('click', function(event){
 key_l.addEventListener('click', function(event){
     allMobile('sounds/tink.wav', key_l)
 })
+
 function allMobile(sound, key_key){
     clickSoundIt(sound)
     expandIt(key_key)
@@ -163,3 +164,4 @@ function allMobile(sound, key_key){
         shirinkIt(key_key)
         key_key.classList.remove('shadowed')
 }, 100)}
+
